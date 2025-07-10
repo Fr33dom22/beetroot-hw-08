@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  color: #ff8984;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+}
+
+.header {
+  padding-top: 19px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4a4f56;
+  display: block;
+  max-width: 793px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.sub-title {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.form-wrapper {
+  display: block;
+  gap: 45px;
+  padding: 20px 129px 45px 129px;
+  max-width: 793px;
+  background: #3b3f45;
+}
+
+.list {
+  list-style: none;
+  max-width: 534px;
+  color: #fff;
+  margin-bottom: 45px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 190px 12px 12px;
+
+  background: #88839e;
+  cursor: pointer;
+}
+
+.list-item:nth-child(even) {
+  background: #7a7593;
+}
+
+.list-item:hover {
+  background: #625e77;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.list-input {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.list-label {
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.list-label > span {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+  top: -1.8px;
+}
+
+.list-input:checked + .list-label {
+  color: #9b96ac;
+  text-decoration-line: line-through;
+  text-decoration-thickness: 1px;
+  text-decoration-skip-ink: none;
+  text-decoration-color: #9b96ac;
+}
+
+.list-input:checked + .list-label span {
+  color: inherit;
+  text-decoration: none;
+  text-decoration-line: inherit;
+  text-decoration-thickness: inherit;
+  text-decoration-skip-ink: inherit;
+  text-decoration-color: inherit;
+}
+
+.btn-wrapper {
+  max-width: 534px;
+  background-color: #4a4f56;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.btn-title {
+  font-weight: 400;
+  font-size: 18px;
+  color: #ff8984;
+  text-align: center;
+}
